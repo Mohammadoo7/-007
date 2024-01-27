@@ -183,8 +183,13 @@ int main (){//تابع اصلی برای نمایش همه چیز از منو و
                 continue;
             }
             print_calender(year , month - 1);// /0 این رو حساب نکنه صدا زدن تابع چاپ تاریخ و ماه رو یکی کم میکنک که چون 
-                printf("--------------------------\n");
-                printf("Back to menu!\n");
+             printf("Enter Month: ");
+             scanf("%d" , &month);
+             print_calender(year , month - 1);
+
+             printf("Enter Month: ");
+             scanf("%d" , &month);
+             print_calender(year , month -1);
                 
             break;// وقتی ماه رو منهای یک نمی کردم بجای ماه اول که فروردین بود مینوشت اردیبهشت
                 
